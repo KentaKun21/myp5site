@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- AUDIO -->
+<audio id="bgm" loop></audio>
+<audio id="start-sfx"></audio>
+<audio id="click-sfx"></audio>
+  <!-- BACKGROUND LOOP -->
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="assets/loop.mp4" type="video/mp4">
+  </video>
+
+  <!-- INTRO -->
+  <video id="intro-video" autoplay muted playsinline>
+    <source src="assets/intro.mp4" type="video/mp4">
+  </video>
+
+  <!-- SEQ PLAYER -->
+  <video id="seq-video" autoplay muted playsinline></video>
+
+  <!-- MENU -->
+  <div class="menu">
+  <a href="#" data-text="ABOUT" onclick="playSeq('seq2.mp4')">ABOUT</a>
+  <a href="#" data-text="EXPERIENCE" onclick="playSeq('seq3.mp4')">EXPERIENCE</a>
+  <a href="#" data-text="EDUCATION" onclick="playSeq('seq4.mp4')">EDUCATION</a>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
